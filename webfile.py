@@ -8,7 +8,6 @@ Created on Sun Nov 13 22:58:25 2022
 import pickle
 import numpy as np
 import streamlit as st
-import xgboost
 import pandas as pd
 loaded_model=pickle.load(open('https://github.com/Rupinderjit29/diamonds/blob/main/trained_model.sav','rb'))
 
