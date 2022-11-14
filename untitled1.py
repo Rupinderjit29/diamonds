@@ -18,7 +18,7 @@ def main():
     
      if st.button('Predict Price'):
        # price = predict1(carat, cut, color, clarity, depth, table, x, y, z)
-        st.success(f'The predicted price of the diamond is USD')
+       st.success(f'The predicted price of the diamond is USD')
         
    
 if __name__=='__main__':
