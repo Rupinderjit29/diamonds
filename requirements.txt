@@ -4,3 +4,4 @@ sklearn
 pandas
 model_selection
 scikit-learn
+numpy
