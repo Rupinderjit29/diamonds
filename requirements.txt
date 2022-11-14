@@ -2,3 +2,4 @@ xgboost
 numba
 sklearn
 pandas
+sci-kit learn
