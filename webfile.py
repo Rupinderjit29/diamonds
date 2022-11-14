@@ -12,7 +12,7 @@ import pandas as pd
 import xgboost as xgb
 #model=xgb.XGBRegressor
 #loaded_model=model.load_model('trained_model.sav','rb')
-loaded_model=pickle.load(open('https://github.com/Rupinderjit29/diamonds/blob/47bd4a7bd3b714e84b6bd98a41e0b081fd96d82e/trained_model.sav','rb'))
+loaded_model=pickle.load(open('trained_model.sav','rb'))
 
 
 def predict(carat, cut, color, clarity, depth, table, x, y, z):
