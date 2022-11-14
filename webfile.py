@@ -60,9 +60,9 @@ def predict1(carat, cut, color, clarity, depth, table, x, y, z):
         clarity = 6
     elif clarity == 'IF':
         clarity = 7
-    
+    test=pd.DataFrame([[carat, cut, color, clarity, depth, table, x, y, z]], columns=['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z'])
 
-    prediction = loaded_model.predict(pd.DataFrame([[carat, cut, color, clarity, depth, table, x, y, z]], columns=['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']))
+    prediction = loaded_model.predict(test)
     return prediction
 
 def main():
