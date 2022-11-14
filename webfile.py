@@ -10,7 +10,7 @@ import numpy as np
 import streamlit as st
 import xgboost
 import pandas as pd
-loaded_model=pickle.load(open('C:/Users/Iqbal/Desktop/web/trained_model.sav','rb'))
+loaded_model=pickle.load(open('trained_model.sav','rb'))
 
 
 def predict(carat, cut, color, clarity, depth, table, x, y, z):
