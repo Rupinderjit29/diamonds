@@ -16,7 +16,7 @@ import xgboost as xgb
 loaded_model=pickle.load(open('trained_model.sav','rb'))
 
 
-def predict(carat, cut, color, clarity, depth, table, x, y, z):
+def predict1(carat, cut, color, clarity, depth, table, x, y, z):
     #Predicting the price of the carat
     if cut == 'Fair':
         cut = 0
@@ -81,7 +81,7 @@ def main():
     z = st.number_input('Diamond Height (Z) in mm:', min_value=0.1, max_value=100.0, value=1.0)
     
     if st.button('Predict Price'):
-        price = predict(carat, cut, color, clarity, depth, table, x, y, z)
+        price = predict1(carat, cut, color, clarity, depth, table, x, y, z)
         st.success(f'The predicted price of the diamond is ${price[0]:.2f} USD')
         
 if __name__=='__main__':   
