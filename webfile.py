@@ -10,6 +10,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import xgboost as xgb
+import sklearn
 #model=xgb.XGBRegressor
 #loaded_model=model.load_model('trained_model.sav','rb')
 loaded_model=pickle.load(open('trained_model.sav','rb'))
