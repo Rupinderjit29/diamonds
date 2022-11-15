@@ -3,6 +3,6 @@ numba
 sklearn
 pandas
 model_selection
-scikit-learn
+scikit-learn=-1.0.2
 numpy
 booster
