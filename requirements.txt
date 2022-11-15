@@ -1,6 +1,5 @@
-xgboost
+xgboost==1.6.2
 numba
-sklearn
 pandas
 model_selection
 scikit-learn==1.0.2
